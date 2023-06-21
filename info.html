@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OTTALL</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
+  <link href="https://fonts.googleapis.com/earlyaccess/notosanskr.css" rel="stylesheet"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700;900&family=Noto+Sans:ital,wght@1,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <style>
+
+
+
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Noto Sans KR', sans-serif;
+    }
+    .header{
+      width: 1200px;
+      height: 70px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 20px;
+    }
+
+    .logo{
+      font-family: 'Noto Sans KR', sans-serif;
+      font-size: 32px;
+      font-weight: 900;
+      display: inline-block;
+      /* margin-left: 52px; */
+      text-decoration: none;
+      color: black;
+      line-height: 70px;
+      vertical-align: middle;
+    }
+    #menu {
+      display: inline-block;
+      margin-left: 20px;
+      padding: 0;
+    }
+    #menu li {
+      display: inline-block;
+      margin-right: 20px;
+      list-style: none;
+      font-size: 16px;
+      line-height: 70px; /*수직 중앙 정렬*/
+      vertical-align: middle;
+    }
+
+    #menu li a{
+      float: left;
+      text-decoration: none;
+      color: black;
+    }
+
+    #myMenu{
+      /* margin-right: 52px; */
+      padding: 0px;
+      float: right;
+      text-align: center;
+      margin-top: 24px;
+      
+    }
+
+    #myMenu li{
+      float: left;
+      list-style: none;
+      margin-right: 16px;
+    }
+    #myMenu li a{
+      float: right;
+      text-decoration: none;
+      color: black;
+    }
+
+
+    /* 여기부터 details css */
+    .details{
+      position: relative;
+      width: 1200px;
+      height: 440px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .name{
+      /* margin-left: 46px;
+      margin-top: 48px; */
+      margin-bottom: 28px;
+    }
+    .informs p{
+      width: 84px;
+      height: 28px;
+      display: inline-block;
+      border: 1px solid black;
+      border-radius: 3px;
+      text-align: center;
+    }
+    .informs{
+      display: inline-block;
+      margin-bottom: 12px;
+      width: 512px;
+    }
+    .watch_now{
+      position:absolute;
+      top: 190px;
+      left: 0px;
+      width: 248px;
+      height: 60px;
+      border: 1px solid black;
+      text-align: center;
+      display: inline-block;
+      border-radius: 3px;
+      line-height: 60px;
+    }
+    .heart, .share{
+      position:absolute;
+      width: 40px;
+      height: 50px;
+      text-align: center;
+      vertical-align: middle;
+      margin-right: 4px;
+      top: 196px;
+    }
+    .heart{
+      left: 260px;
+    }
+    .share{
+      left: 300px;
+    }
+    .infos{
+      position: absolute;
+      top: 304px;
+      width: 420px;
+    }
+    .main_img{
+      position: absolute;
+      right: 52px;
+      top: 0;
+      right: 0;
+    }
+    hr{
+      width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* 여기부터 series css 시작! */
+    img{
+      border-radius: 5px;
+    }
+
+    .nav{
+      display: inline-block;
+      position: absolute;
+      width: 52px;
+      height: 440px;
+      text-decoration: none;
+      }
+    
+    .nav span {
+      line-height: 440px;
+      width: 52px;
+      vertical-align: middle;
+      text-align: center;
+      color: black;
+       display: none; /*기본적으로 숨김 처리 */
+    }
+
+      .right{
+        line-height: 440px;
+        width: 52px;
+        vertical-align: middle;
+        text-align: center;
+        color: black;
+        position: absolute;
+        right: 0px;
+        display: none;
+      }
+
+      .series:hover span {
+        display: inline-block; /* hover 시 보이도록 변경 */
+      }
+
+    .des{
+      display: inline-block;
+      font-size: 20px;
+      margin-top: 36px;
+      margin-left: 54px;
+      margin-bottom: 32px;
+      font-weight: 600;
+    }
+    .series{
+      position: relative;
+      width: 1200px;
+      height: 400px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .list{
+      width: 1096px;
+      height: 332px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .ep:not(:last-child){
+      margin-right: 12px;
+    }
+    .dr .title{
+      font-size: 16px;
+      margin-bottom: 4px;
+    }
+    .dr{
+      width: 260px;
+    }
+    .dr p{
+      font-size: 12px;
+      overflow: hidden;
+    }
+    .ep{
+      display: inline-block;
+    }
+
+    /* 여기부터 rec css */
+
+    .rec{
+      position: relative;
+      /* border: 0.5px solid red; */
+      width: 1200px;
+      height: 400px;
+      margin-left: auto;
+      margin-right: auto;
+      }
+      .rec:hover span {
+          display: inline-block; /* hover 시 보이도록 변경 */
+        }
+
+        .poster{
+          display: inline-block;
+        }
+        .poster:not(:last-child){
+          margin-right: 16px;
+        }
+
+        /* 여기부터 footer css 시작 */
+    .footer{
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 100px;
+      width: 1200px;
+      height: 440px;
+    }
+    .footer_link, .footer_info, .footer_sns{
+      margin-left: 53px;
+    }
+
+    .footer_link li{
+      display: inline-block;
+      margin-right: 20px;
+      list-style: none;
+      font-size: 16px;
+      line-height: 70px; /*수직 중앙 정렬*/
+      vertical-align: middle;
+    }
+
+    .footer_link li a{
+      float: left;
+      text-decoration: none;
+      color: black;
+      font-weight: 700;
+    }
+
+    .footer_sns li{
+      display: inline-block;
+    }
+    .footer_sns li a{
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    li::marker {
+      content: none;
+    }
+
+    img{
+        border-radius: 4px;
+      }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <a href="#" class='logo'>OTTALL</a>
+
+    <!-- 헤더 좌측 메뉴바 -->
+    <ul id="menu">
+      <li><a href="#">플랫폼관</a></li>
+      <li><a href="#">TV프로그램</a></li>
+      <li><a href="#">영화</a></li>
+      <li><a href="#">애니메이션</a></li>
+    </ul>
+
+    <!-- 헤더 우측 바(my 부분) -->
+    <ul id="myMenu">
+      <li><a href="#"><img src="https://i.postimg.cc/856vZxmr/serch.png" alt="검색" width="24px"/></a></li>
+      <li><a href="#">
+        <img src="https://i.postimg.cc/Bntp7KFr/user-logo.png" alt="마이페이지" width="24px"/></a>
+      </li>
+      <li><a href="https://www.tving.com/">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/TVING.png/1200px-TVING.png" alt="티빙"
+            width="24px"/></a>
+      </li>
+      <li><a href="https://www.netflix.com/">
+          <img src="https://i.postimg.cc/k4wLFLZN/netflix-logo.png" alt="넷플릭스" width="24px"/></a>
+      </li>
+    </ul>
+  </div>
+
+  <div class='details'>
+    <div class='name'><img src="https://i.postimg.cc/BvpjJV35/image-12.png" alt="" width='120px'height='75px' ></div>
+    <div class='informs'>
+      <p>15+</p>
+      <p>2023</p>
+      <p>드라마</p>
+      <p>시즌 1개</p>
+      <p>해설자막</p>
+    </div>
+    <div class='watch_now'>1화 시청하기</div>
+    <div class='heart'><span class="material-symbols-outlined">favorite</span><br>찜</div>
+    <div class='share'><span class="material-symbols-outlined">upload</span><br>공유</div>
+
+    <div class='infos'>
+      <p>크리에이터 | 김대진, 김정욱<br>
+        출연 | 엄정화, 김병철, 명세빈, 민우혁, 김예은, 송지호, 조아람
+        <br><br>
+        20년 차 가정주부에서 1년 차 레지던트가 된 차정숙의 찢어진 인생 봉합기를 그린 드라마</p>
+    </div>
+
+    <div class='main_img'><img src="https://image.tving.com/upload/cms/caip/CAIP0900/P001710496.jpg/dims/resize/F_webp,480" 
+      alt="" width='288px'></div>
+  </div>
+  
+  <br>
+  <hr>
+
+  <div class='series'>
+          <!-- 화살표 hover 시 보임 -->
+      <a href="#" div class='nav'>
+        <span class="material-symbols-outlined left">arrow_back_ios</span>
+      </a>  
+      <a href="#" div class='nav'></a>
+        <span class="material-symbols-outlined right">arrow_forward_ios</span>
+      </a> 
+    <p class='des'>닥터 차정숙</p>
+
+    <div class='list'>
+
+      <div class='ep'>
+      <img src="https://image.tving.com/upload/cms/caie/CAIE0400/E003895016.jpg/dims/resize/F_webp,600" 
+        alt="이미지" width='260px'>
+        <div class='dr'>
+          <p class='title'>1. 닥터 차정숙 1화</p>
+          <p>내가..의산데...정숙은 우연히 탄 버스에서 위급한 환자를 마주한다. 하지만 이미 20여년을 전업주부로 산 정숙은 아무런 조치를 취하지 못하고... </p>
+          <p>2023.04.15 | 61분</p>
+        </div>
+      </div>  
+
+      <div class='ep'>
+        <img src="https://image.tving.com/upload/cms/caie/CAIE0400/E003895017.jpg/dims/resize/F_webp,600" 
+          alt="이미지" width='260px'>
+          <div class='dr'>
+            <p class='title'>2. 닥터 차정숙 2화</p>
+            <p>이제 나 꼴리는 대로 산다고.
+              인호의 배신에도 구사일생으로 목숨을 구한 정숙. 그러나 삶의 전부라고 생각했던 가족에 대한 서운함이 폭발하는데... </p>
+            <p>2023.04.16 | 60분</p>
+          </div>
+        </div>  
+
+        
+        <div class='ep'>
+          <img src="https://image.tving.com/upload/cms/caie/CAIE0400/E003898352.jpg/dims/resize/F_webp,600" 
+            alt="이미지" width='260px'>
+            <div class='dr'>
+              <p class='title'>3. 닥터 차정숙 3화</p>
+              <p>우여곡절 끝에 인호와 아들 정민이 있는
+                대학병원 가정의학과 레지던트에 합격한 정숙!
+                남편 인호에겐 알리지 않았지만
+                인호는 승희에게 들어 모든 사실을...
+              </p>
+              <p>2023.04.22 | 61분</p>
+            </div>
+          </div>  
+
+          
+          <div class='ep'>
+            <img src="https://image.tving.com/upload/cms/caie/CAIE0400/E003898480.jpg/dims/resize/F_webp,600" 
+              alt="이미지" width='260px'>
+              <div class='dr'>
+                <p class='title'>4. 닥터 차정숙 4화</p>
+                <p>외과로 파견 나온 정숙은 그야말로 에브리데이 멘붕이다.
+
+                  일은 손에 익지 않아 실수 투성에 머리도 전처럼 잘 안 돌아가다 보니
+                  자식뻘 되는 전공의 3년차...
+                </p>
+                <p>2023.04.23 | 64분</p>
+              </div>
+            </div>  
+      
+
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <hr>
+
+
+  <!-- 여기부터 추천 콘텐츠 -->
+  <div class='rec'>
+    <!-- 화살표 hover 시 보임 -->
+    <a href="#" div class='nav'>
+      <span class="material-symbols-outlined left">arrow_back_ios</span>
+    </a>  
+    <a href="#" div class='nav'></a>
+      <span class="material-symbols-outlined right">arrow_forward_ios</span>
+    </a> 
+
+    <p class='des'>비슷한 TV 프로그램</p>
+
+    <div class='list'>
+
+      <div class='poster'>
+        <img src="https://image.tving.com/upload/cms/caip/CAIP0900/P001698295.jpg/dims/resize/F_webp,400" 
+        alt="이미지" width='200px'>
+      </div>
+
+      <div class='poster'>
+        <img src="https://image.tving.com/upload/cms/caip/CAIP0900/P001446046.png/dims/resize/F_webp,400" 
+        alt="이미지" width='200px'>
+      </div>
+    
+      <div class='poster'>
+        <img src="https://image.tving.com/upload/cms/caip/CAIP0900/P000610039.jpg/dims/resize/F_webp,400" 
+        alt="이미지" width='200px'>
+      </div>
+      <div class='poster'>
+        <img src="https://image.tving.com/upload/cms/caip/CAIP0900/P001355162.jpg/dims/resize/F_webp,400" 
+        alt="이미지" width='200px'>
+      </div>
+      <div class='poster'>
+        <img src="https://image.tving.com/upload/cms/caip/CAIP0900/P001716801.jpg/dims/resize/F_webp,400" 
+        alt="이미지" width='200px'>
+      </div>
+      
+    </div>
+  </div>
+  </div>
+
+
+
+  <!-- 여기부터 푸터 시작 -->
+  <div class='footer'>
+    <ul class="footer_link">
+      <li><a href="#">고객센터</a></li>
+      <li><a href="#">이용약관</a></li>
+      <li><a href="#">개인정보처리</a></li>
+      <li><a href="#">법적고지</a></li>
+      <li><a href="#">회사소개</a></li>
+      <li><a href="#">인재채용</a></li>
+    </ul>
+
+    <div class='footer_info'>
+      <span>대표이사 : Lee Jieun | 사업자정보확인 | 사업자등록번호 : 188-88-01893 | 통신판매신고번호 : 2020-서울마포-3641호</span><br><br>
+      <span>사업장 : 서울특별시 마포구 상암산로 34, DMC디지털큐브 15층(상암동) | 호스팅사업자 : 오톨네트웍스(주)</span><br><br>
+      <span><a href="#"></a>고객문의 바로가기 |</span><span> 대표메일 : ottall@jew.net | 고객센터 : 1670-1525 (평일/주말 09시~18시, 공휴일 휴무)</span><br><br>
+    </div>
+
+    <ul class="footer_sns">
+      <li><a href="#"><img src="https://i.postimg.cc/J7PR5rfM/yt.png" alt="검색" width="52px"/></a></li>
+      <li><a href="#">
+        <img src="https://i.postimg.cc/k5F0Mw9q/insta.png" alt="마이페이지" width="52px"/></a>
+      </li>
+      <li><a href="#">
+          <img src="https://i.postimg.cc/2jXP51pb/facebook.png" alt="티빙"
+            width="52px"/></a>
+      </li>
+      <li><a href="#">
+          <img src="https://i.postimg.cc/MTpF6Sdm/twitter.png" alt="넷플릭스" width="52px"/></a>
+      </li>
+
+      <br><br>
+      <span>Copyright © 주식회사 오톨 All right reserved.</span>
+
+    </ul>
+  </div>
+</body>
+</html>

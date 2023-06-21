@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Noto Sans KR', sans-serif;
+    }
+    img{
+        border-radius: 4px;
+      }
+    .header{
+      width: 1200px;
+      height: 70px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 20px;
+    }
+
+    .logo{
+      font-family: 'Noto Sans KR', sans-serif;
+      font-size: 32px;
+      font-weight: 900;
+      display: inline-block;
+      /* margin-left: 52px; */
+      text-decoration: none;
+      color: black;
+      line-height: 70px;
+      vertical-align: middle;
+    }
+    #menu {
+      display: inline-block;
+      margin-left: 20px;
+      padding: 0;
+    }
+    #menu li {
+      display: inline-block;
+      margin-right: 20px;
+      list-style: none;
+      font-size: 16px;
+      line-height: 70px; /*수직 중앙 정렬*/
+      vertical-align: middle;
+    }
+
+    #menu li a{
+      float: left;
+      text-decoration: none;
+      color: black;
+    }
+
+    #myMenu{
+      /* margin-right: 52px; */
+      padding: 0px;
+      float: right;
+      text-align: center;
+      margin-top: 24px;
+      
+    }
+
+    #myMenu li{
+      float: left;
+      list-style: none;
+      margin-right: 16px;
+    }
+    #myMenu li a{
+      float: right;
+      text-decoration: none;
+      color: black;
+    }
+
+    /* main */
+    .event_p{
+      width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .main{
+      width: 1200px;
+      height: 524px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .pic1{
+      position: relative;
+      width: 1200px;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 56px;
+    }
+    .pic2{
+      position: absolute;
+      top: 100px;
+      left: 280px;
+    }
+
+    .pic3, .pic4{
+      position: relative;
+      width: 1200px;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 56px;
+      margin-top: 40px;
+    }
+
+    .rectangle60{
+      background-color:#fbc1bd;
+      height:36px;
+      width:16px;
+      display: inline-block;
+      }
+      p{
+        display: inline-block;
+      }
+
+    .floor{
+      margin-top: 20px;
+      text-align:left;
+      font-size:20px;
+      width:700px;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .talk{
+      margin-top: 20px;
+      text-align:left;
+      font-size:20px;
+      font-family:Nanum Myeongjo;
+      border-style:hidden;
+      width:400px;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .explain{
+      width: 794px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 28px;
+    }
+    .btn{
+color:#ffffff;
+text-align:center;
+font-size:20px;
+font-family:Nanum Gothic;
+width:224px;
+border: 1px solid #505050;
+background-color: #505050;
+padding: 20px;
+border-radius: 30px;
+margin-left: auto;
+      margin-right: auto;
+      margin-top: 20px;
+}
+
+.btn1{
+color:#ffffff;
+text-align:center;
+font-size:20px;
+font-family:Nanum Gothic;
+width:224px;
+border: 1px solid #191919;
+background-color: #191919;
+padding: 20px;
+border-radius: 10px;
+margin-left: auto;
+      margin-right: auto;
+      margin-top: 20px;
+      margin-bottom: 24px;
+      width: 500px;
+}
+  </style>
+</head>
+<body>
+  <div class="header">
+    <a href="#" class='logo'>OTTALL</a>
+
+    <!-- 헤더 좌측 메뉴바 -->
+    <ul id="menu">
+      <li><a href="#">플랫폼관</a></li>
+      <li><a href="#">TV프로그램</a></li>
+      <li><a href="#">영화</a></li>
+      <li><a href="#">애니메이션</a></li>
+    </ul>
+
+    <!-- 헤더 우측 바(my 부분) -->
+    <ul id="myMenu">
+      <li><a href="#"><img src="https://i.postimg.cc/856vZxmr/serch.png" alt="검색" width="24px"/></a></li>
+      <li><a href="#">
+        <img src="https://i.postimg.cc/Bntp7KFr/user-logo.png" alt="마이페이지" width="24px"/></a>
+      </li>
+      <li><a href="https://www.tving.com/">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/TVING.png/1200px-TVING.png" alt="티빙"
+            width="24px"/></a>
+      </li>
+      <li><a href="https://www.netflix.com/">
+          <img src="https://i.postimg.cc/k4wLFLZN/netflix-logo.png" alt="넷플릭스" width="24px"/></a>
+      </li>
+    </ul>
+  </div>
+
+  <div class='event_p'>
+
+  <div class='main'><img src="http://mkt.tving.com/siseonzip2/img/main/pc/bg.png" alt=""  width='1200px'></div>
+
+  <div class='pic1'><img src="http://mkt.tving.com/siseonzip2/img/sec3/pc/img.png" alt="" width='700px'>
+    <div class='pic2'><img src="http://mkt.tving.com/siseonzip2/img/sec3/mo/title.png" alt="" width='252px'></div>
+  </div>
+
+  <div id='rectangle60' class='rectangle60'>
+  </div>
+  <p>배우 김남길이 뽑은 그 장면</p>
+
+  <div class='pic3'><img src="https://i.postimg.cc/PqVfcJ0W/pic3.png" alt="" width='700px'>
+
+    <div class='talk'>
+“새해 복 많이 받아라 씨XX아”</div>
+
+<div class='explain'>무뢰한 | 비정한 세상 속에서 무죄한 같이 살아온 한 남자의 감정을 관객에게 그대로 전하는
+장면이예요. <br>정재곤의 성격에 가장 어울리는 장면이 영화에 쓰인 것 같아요.</div>
+  
+
+<div class='pic4'><img src="https://i.postimg.cc/P58MNvQx/pic4.png" alt="" width='700px'>
+
+    <div class='talk'>
+“부디, 하해와 같은 은혜를 베풀어
+목숨만, 제발 목숨만 살려주십시오”</div>
+
+<div class='explain'>명불허전 | 당대의 모든 이들의 아픔을 대변하는 장면 같았어요.<br>
+400여년이 지난 지금 우리네 현실도 별반 다르지 않나 싶어 더욱 가슴이 아팠어요.</div>
+  
+</div>
+<div class='pic4'><img src="https://i.postimg.cc/pL8DPbP5/pic5.png" alt="" width='700px'>
+
+  <div class='floor'>
+배우 김남길의 다양한 작품을 감상하고
+애정과 응원의 메시지를 남겨주세요.<br>
+배우 김남길 시선 ZIP. 굿즈패키지를 드립니다.</div>
+
+<div class='pic4'><img src="https://i.postimg.cc/ncm2TwC2/pic6.png" alt="" width='700px'>
+
+  <div class='btn'>
+전체 사양 보기</div>
+
+  <div class='btn1'>
+메시지 남기러 가기</div>
+
+</body>
+</html>
